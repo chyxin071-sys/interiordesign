@@ -1,5 +1,9 @@
 # 住宅空间设计 Viewer
 
+## 可复用 Skill
+
+[住宅空间生成与方案迭代](skills/residential-spatial-design/SKILL.md) 提供从平面图识别、白模确认、全屋方案到交互 Viewer 的分阶段操作指南。配套项目复用说明与编辑验收规范；默认交付实时模型，不包含离线渲染或专业软件插件。可将 `skills/residential-spatial-design` 整个文件夹安装到支持 Skill 的环境后使用；它需要 AI 和相应开发工具运行，不是独立应用。示例请求：`使用 $residential-spatial-design，先根据这张平面图生成白模，确认后继续设计。`
+
 固定建筑空间 + 三套可整体替换的全屋设计。按用户最新要求，本阶段只提供交互模型，不提供 Render 或 AI 效果图。
 
 ## 使用
