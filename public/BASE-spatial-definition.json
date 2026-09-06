@@ -1,0 +1,2912 @@
+{
+  "source": {
+    "width": 1254,
+    "height": 1254,
+    "metresPerPixel": 0.014,
+    "estimated": true,
+    "wallHeight": 2.8,
+    "eyeHeight": 1.6,
+    "doorHeight": 2.15,
+    "windowSill": 0.18,
+    "windowHead": 2.65
+  },
+  "rooms": [
+    {
+      "id": "living",
+      "name": "客厅",
+      "en": "Living room",
+      "center": [
+        810,
+        880
+      ],
+      "boundary": [
+        [
+          613,
+          767
+        ],
+        [
+          947,
+          767
+        ],
+        [
+          947,
+          1064
+        ],
+        [
+          613,
+          1064
+        ]
+      ],
+      "note": "与多功能区、餐厅开放连通；南侧为连续窗带。",
+      "connects": [
+        "flex",
+        "dining",
+        "bed2"
+      ]
+    },
+    {
+      "id": "flex",
+      "name": "多功能区",
+      "en": "Flexible space",
+      "center": [
+        473,
+        863
+      ],
+      "boundary": [
+        [
+          364,
+          767
+        ],
+        [
+          613,
+          767
+        ],
+        [
+          613,
+          1064
+        ],
+        [
+          364,
+          1064
+        ]
+      ],
+      "note": "原图没有实体隔墙，保留与客厅的开放关系。",
+      "connects": [
+        "living",
+        "dining",
+        "master"
+      ]
+    },
+    {
+      "id": "dining",
+      "name": "餐厅",
+      "en": "Dining",
+      "center": [
+        800,
+        552
+      ],
+      "boundary": [
+        [
+          699,
+          447
+        ],
+        [
+          941,
+          447
+        ],
+        [
+          941,
+          737
+        ],
+        [
+          699,
+          737
+        ]
+      ],
+      "note": "六人餐桌与南侧岛台按原图占位，西侧连通厨房。",
+      "connects": [
+        "entry",
+        "kitchen",
+        "living",
+        "flex",
+        "gym"
+      ]
+    },
+    {
+      "id": "entry",
+      "name": "玄关",
+      "en": "Entrance",
+      "center": [
+        1000,
+        518
+      ],
+      "boundary": [
+        [
+          929,
+          445
+        ],
+        [
+          1079,
+          445
+        ],
+        [
+          1079,
+          582
+        ],
+        [
+          929,
+          582
+        ]
+      ],
+      "note": "主入户门位于上侧，与电梯前室相连；右侧为固定收纳。",
+      "connects": [
+        "dining",
+        "lobby",
+        "store"
+      ]
+    },
+    {
+      "id": "kitchen",
+      "name": "厨房",
+      "en": "Kitchen",
+      "center": [
+        600,
+        545
+      ],
+      "boundary": [
+        [
+          509,
+          449
+        ],
+        [
+          684,
+          449
+        ],
+        [
+          684,
+          669
+        ],
+        [
+          509,
+          669
+        ]
+      ],
+      "note": "U 形操作台、北侧水槽、西侧灶具与南侧冰箱；东侧开口通餐厅。",
+      "connects": [
+        "dining"
+      ]
+    },
+    {
+      "id": "bed1",
+      "name": "次卧（一）",
+      "en": "Bedroom 01",
+      "center": [
+        220,
+        472
+      ],
+      "boundary": [
+        [
+          125,
+          405
+        ],
+        [
+          137,
+          370
+        ],
+        [
+          178,
+          346
+        ],
+        [
+          346,
+          346
+        ],
+        [
+          346,
+          681
+        ],
+        [
+          274,
+          681
+        ],
+        [
+          274,
+          612
+        ],
+        [
+          125,
+          612
+        ]
+      ],
+      "note": "西北侧弧形窗带；床、床头柜、南侧衣柜占位；东南侧门洞通中央过道。",
+      "connects": [
+        "hall"
+      ]
+    },
+    {
+      "id": "bath",
+      "name": "公卫",
+      "en": "Shared bathroom",
+      "center": [
+        414,
+        521
+      ],
+      "boundary": [
+        [
+          361,
+          402
+        ],
+        [
+          489,
+          402
+        ],
+        [
+          489,
+          567
+        ],
+        [
+          361,
+          567
+        ]
+      ],
+      "note": "北侧淋浴、东侧坐便器；入口位于南侧偏西，开启方式推定。南侧洗手台位于外置干区。",
+      "connects": [
+        "hall"
+      ]
+    },
+    {
+      "id": "hall",
+      "name": "中央过道",
+      "en": "Circulation",
+      "center": [
+        391,
+        722
+      ],
+      "boundary": [
+        [
+          275,
+          686
+        ],
+        [
+          351,
+          686
+        ],
+        [
+          351,
+          572
+        ],
+        [
+          436,
+          572
+        ],
+        [
+          436,
+          686
+        ],
+        [
+          698,
+          686
+        ],
+        [
+          698,
+          764
+        ],
+        [
+          275,
+          764
+        ]
+      ],
+      "note": "连接两处卧室入口、公卫干区及公共起居区，保持原图狭长通道。",
+      "connects": [
+        "bed1",
+        "bath",
+        "master",
+        "flex",
+        "dining"
+      ]
+    },
+    {
+      "id": "master",
+      "name": "主卧室",
+      "en": "Primary bedroom",
+      "center": [
+        193,
+        1021
+      ],
+      "boundary": [
+        [
+          65,
+          917
+        ],
+        [
+          344,
+          917
+        ],
+        [
+          344,
+          1188
+        ],
+        [
+          132,
+          1188
+        ],
+        [
+          94,
+          1177
+        ],
+        [
+          65,
+          1144
+        ]
+      ],
+      "note": "与上方衣帽间连通；左下弧形外边界和窗带按轮廓折线细分。",
+      "connects": [
+        "wardrobe"
+      ]
+    },
+    {
+      "id": "wardrobe",
+      "name": "衣帽间",
+      "en": "Dressing",
+      "center": [
+        180,
+        830
+      ],
+      "boundary": [
+        [
+          65,
+          781
+        ],
+        [
+          344,
+          781
+        ],
+        [
+          344,
+          917
+        ],
+        [
+          65,
+          917
+        ]
+      ],
+      "note": "L 形收纳占位，与主卧开放连通；北侧进入主卫，东侧门通中央过道。",
+      "connects": [
+        "master",
+        "ensuite",
+        "hall"
+      ]
+    },
+    {
+      "id": "ensuite",
+      "name": "主卫",
+      "en": "En-suite",
+      "center": [
+        175,
+        702
+      ],
+      "boundary": [
+        [
+          66,
+          632
+        ],
+        [
+          260,
+          632
+        ],
+        [
+          260,
+          771
+        ],
+        [
+          66,
+          771
+        ]
+      ],
+      "note": "左侧淋浴、中央坐便器、右侧洗手台；南侧出入口通衣帽间。",
+      "connects": [
+        "wardrobe"
+      ]
+    },
+    {
+      "id": "bed2",
+      "name": "次卧（二）",
+      "en": "Bedroom 02",
+      "center": [
+        1081,
+        934
+      ],
+      "boundary": [
+        [
+          970,
+          771
+        ],
+        [
+          1193,
+          771
+        ],
+        [
+          1193,
+          1062
+        ],
+        [
+          970,
+          1062
+        ]
+      ],
+      "note": "北侧收纳、右侧床头和南侧窗带；西北侧门洞通公共区。",
+      "connects": [
+        "living"
+      ]
+    },
+    {
+      "id": "store",
+      "name": "储藏间",
+      "en": "Storage",
+      "center": [
+        1013,
+        659
+      ],
+      "boundary": [
+        [
+          958,
+          608
+        ],
+        [
+          1084,
+          608
+        ],
+        [
+          1084,
+          702
+        ],
+        [
+          958,
+          702
+        ]
+      ],
+      "note": "北、东侧固定边界及可替换储物柜；西侧有门洞。",
+      "connects": [
+        "entry"
+      ]
+    },
+    {
+      "id": "gym",
+      "name": "健身区",
+      "en": "Gym",
+      "center": [
+        707,
+        285
+      ],
+      "boundary": [
+        [
+          554,
+          177
+        ],
+        [
+          864,
+          177
+        ],
+        [
+          864,
+          425
+        ],
+        [
+          554,
+          425
+        ]
+      ],
+      "note": "跑步机及训练器械占位；南侧为推定推拉门，西接庭院。北侧与泳池之间边界形式待核。",
+      "connects": [
+        "dining",
+        "courtyard"
+      ]
+    },
+    {
+      "id": "courtyard",
+      "name": "庭院",
+      "en": "Courtyard",
+      "center": [
+        479,
+        234
+      ],
+      "boundary": [
+        [
+          415,
+          111
+        ],
+        [
+          547,
+          111
+        ],
+        [
+          547,
+          281
+        ],
+        [
+          415,
+          281
+        ]
+      ],
+      "note": "围合座椅与中部矮桌；周边为花池。与健身区之间开启形式推定。",
+      "connects": [
+        "gym"
+      ],
+      "kind": "outdoor"
+    },
+    {
+      "id": "pool",
+      "name": "泳池",
+      "en": "Pool",
+      "center": [
+        702,
+        116
+      ],
+      "boundary": [
+        [
+          556,
+          63
+        ],
+        [
+          858,
+          63
+        ],
+        [
+          858,
+          171
+        ],
+        [
+          556,
+          171
+        ]
+      ],
+      "note": "约 4.23 × 1.51 m，按原图比例；池深 1.2 m 为占位假设，不作为施工依据。",
+      "connects": [],
+      "kind": "outdoor"
+    },
+    {
+      "id": "lobby",
+      "name": "电梯前室",
+      "en": "Lift lobby",
+      "center": [
+        1005,
+        306
+      ],
+      "boundary": [
+        [
+          888,
+          232
+        ],
+        [
+          1141,
+          232
+        ],
+        [
+          1141,
+          424
+        ],
+        [
+          888,
+          424
+        ]
+      ],
+      "note": "上侧方形井道按电梯推定；右侧设备间用途与前室门扇待确认。",
+      "connects": [
+        "entry",
+        "stairs",
+        "lift"
+      ],
+      "kind": "common"
+    },
+    {
+      "id": "lift",
+      "name": "电梯井（推定）",
+      "en": "Lift · inferred",
+      "center": [
+        972,
+        145
+      ],
+      "boundary": [
+        [
+          889,
+          64
+        ],
+        [
+          1059,
+          64
+        ],
+        [
+          1059,
+          212
+        ],
+        [
+          889,
+          212
+        ]
+      ],
+      "note": "依据厚墙方形井道及叉线符号推定为电梯；不构造未知井道设备。",
+      "connects": [
+        "lobby"
+      ],
+      "kind": "common"
+    },
+    {
+      "id": "stairs",
+      "name": "公共楼梯",
+      "en": "Common stair",
+      "center": [
+        1150,
+        566
+      ],
+      "boundary": [
+        [
+          1100,
+          451
+        ],
+        [
+          1194,
+          451
+        ],
+        [
+          1194,
+          740
+        ],
+        [
+          1100,
+          740
+        ]
+      ],
+      "note": "按图示梯段位置构建示意踏步；上下行方向和实际层高不能由此图确定，漫游范围止于前室。",
+      "connects": [
+        "lobby"
+      ],
+      "kind": "common"
+    }
+  ],
+  "walls": [
+    {
+      "id": "W01-west-suite",
+      "a": [
+        55,
+        618
+      ],
+      "b": [
+        55,
+        1142
+      ],
+      "t": 17,
+      "h": 2.8
+    },
+    {
+      "id": "W02-bed1-west",
+      "a": [
+        118,
+        400
+      ],
+      "b": [
+        118,
+        615
+      ],
+      "t": 16,
+      "h": 2.8
+    },
+    {
+      "id": "W03-north-suite",
+      "a": [
+        55,
+        619
+      ],
+      "b": [
+        125,
+        619
+      ],
+      "t": 16,
+      "h": 2.8
+    },
+    {
+      "id": "W04-spine-north",
+      "a": [
+        356,
+        332
+      ],
+      "b": [
+        356,
+        685
+      ],
+      "t": 16,
+      "h": 2.8
+    },
+    {
+      "id": "W05-spine-south",
+      "a": [
+        356,
+        774
+      ],
+      "b": [
+        356,
+        1197
+      ],
+      "t": 18,
+      "h": 2.8
+    },
+    {
+      "id": "W06-primary-bath-west",
+      "a": [
+        133,
+        625
+      ],
+      "b": [
+        133,
+        779
+      ],
+      "t": 10,
+      "h": 2.8
+    },
+    {
+      "id": "W07-primary-bath-east",
+      "a": [
+        265,
+        622
+      ],
+      "b": [
+        265,
+        774
+      ],
+      "t": 12,
+      "h": 2.8
+    },
+    {
+      "id": "W08-primary-bath-top",
+      "a": [
+        133,
+        621
+      ],
+      "b": [
+        266,
+        621
+      ],
+      "t": 12,
+      "h": 2.8
+    },
+    {
+      "id": "W09-primary-bath-bottom-a",
+      "a": [
+        55,
+        777
+      ],
+      "b": [
+        140,
+        777
+      ],
+      "t": 10,
+      "h": 2.8
+    },
+    {
+      "id": "W10-primary-bath-bottom-b",
+      "a": [
+        207,
+        777
+      ],
+      "b": [
+        265,
+        777
+      ],
+      "t": 10,
+      "h": 2.8
+    },
+    {
+      "id": "W11-bed1-south",
+      "a": [
+        125,
+        617
+      ],
+      "b": [
+        270,
+        617
+      ],
+      "t": 14,
+      "h": 2.8
+    },
+    {
+      "id": "W12-kitchen-west",
+      "a": [
+        499,
+        395
+      ],
+      "b": [
+        499,
+        679
+      ],
+      "t": 20,
+      "h": 2.8
+    },
+    {
+      "id": "W13-kitchen-south",
+      "a": [
+        499,
+        678
+      ],
+      "b": [
+        688,
+        678
+      ],
+      "t": 17,
+      "h": 2.8
+    },
+    {
+      "id": "W14-kitchen-east-a",
+      "a": [
+        688,
+        444
+      ],
+      "b": [
+        688,
+        508
+      ],
+      "t": 7,
+      "h": 2.8
+    },
+    {
+      "id": "W15-kitchen-east-b",
+      "a": [
+        688,
+        610
+      ],
+      "b": [
+        688,
+        678
+      ],
+      "t": 7,
+      "h": 2.8
+    },
+    {
+      "id": "W16-gym-south-west",
+      "a": [
+        501,
+        438
+      ],
+      "b": [
+        696,
+        438
+      ],
+      "t": 18,
+      "h": 2.8
+    },
+    {
+      "id": "W17-gym-south-east",
+      "a": [
+        855,
+        438
+      ],
+      "b": [
+        928,
+        438
+      ],
+      "t": 18,
+      "h": 2.8
+    },
+    {
+      "id": "W18-bath-north",
+      "a": [
+        356,
+        397
+      ],
+      "b": [
+        499,
+        397
+      ],
+      "t": 16,
+      "h": 2.8
+    },
+    {
+      "id": "W19-bath-split-a",
+      "a": [
+        360,
+        479
+      ],
+      "b": [
+        389,
+        479
+      ],
+      "t": 7,
+      "h": 2.8
+    },
+    {
+      "id": "W20-bath-split-b",
+      "a": [
+        443,
+        479
+      ],
+      "b": [
+        491,
+        479
+      ],
+      "t": 7,
+      "h": 2.8
+    },
+    {
+      "id": "W21-bath-south",
+      "a": [
+        426,
+        569
+      ],
+      "b": [
+        491,
+        569
+      ],
+      "t": 10,
+      "h": 2.8
+    },
+    {
+      "id": "W41-entry-jamb",
+      "a": [
+        1035,
+        438
+      ],
+      "b": [
+        1089,
+        438
+      ],
+      "t": 18,
+      "h": 2.8
+    },
+    {
+      "id": "W22-store-north",
+      "a": [
+        953,
+        594
+      ],
+      "b": [
+        1089,
+        594
+      ],
+      "t": 19,
+      "h": 2.8
+    },
+    {
+      "id": "W23-store-west",
+      "a": [
+        955,
+        597
+      ],
+      "b": [
+        955,
+        636
+      ],
+      "t": 17,
+      "h": 2.8
+    },
+    {
+      "id": "W24-store-south",
+      "a": [
+        954,
+        718
+      ],
+      "b": [
+        1090,
+        718
+      ],
+      "t": 15,
+      "h": 2.8
+    },
+    {
+      "id": "W25-east-spine",
+      "a": [
+        1091,
+        438
+      ],
+      "b": [
+        1091,
+        750
+      ],
+      "t": 18,
+      "h": 2.8
+    },
+    {
+      "id": "W26-bed2-north",
+      "a": [
+        1092,
+        752
+      ],
+      "b": [
+        1202,
+        752
+      ],
+      "t": 19,
+      "h": 2.8
+    },
+    {
+      "id": "W27-bed2-east",
+      "a": [
+        1202,
+        752
+      ],
+      "b": [
+        1202,
+        1090
+      ],
+      "t": 17,
+      "h": 2.8
+    },
+    {
+      "id": "W28-bed2-west",
+      "a": [
+        958,
+        796
+      ],
+      "b": [
+        958,
+        1067
+      ],
+      "t": 19,
+      "h": 2.8
+    },
+    {
+      "id": "W29-gym-east-bottom",
+      "a": [
+        878,
+        327
+      ],
+      "b": [
+        878,
+        435
+      ],
+      "t": 17,
+      "h": 2.8
+    },
+    {
+      "id": "W30-gym-east-top",
+      "a": [
+        878,
+        176
+      ],
+      "b": [
+        878,
+        229
+      ],
+      "t": 17,
+      "h": 2.8
+    },
+    {
+      "id": "W31-lift-top",
+      "a": [
+        853,
+        50
+      ],
+      "b": [
+        1070,
+        50
+      ],
+      "t": 18,
+      "h": 2.8
+    },
+    {
+      "id": "W32-lift-west",
+      "a": [
+        878,
+        51
+      ],
+      "b": [
+        878,
+        224
+      ],
+      "t": 18,
+      "h": 2.8
+    },
+    {
+      "id": "W33-lift-east",
+      "a": [
+        1068,
+        50
+      ],
+      "b": [
+        1068,
+        226
+      ],
+      "t": 18,
+      "h": 2.8
+    },
+    {
+      "id": "W34-lift-bottom-a",
+      "a": [
+        880,
+        221
+      ],
+      "b": [
+        925,
+        221
+      ],
+      "t": 18,
+      "h": 2.8
+    },
+    {
+      "id": "W35-lift-bottom-b",
+      "a": [
+        1020,
+        221
+      ],
+      "b": [
+        1068,
+        221
+      ],
+      "t": 18,
+      "h": 2.8
+    },
+    {
+      "id": "W36-service-top",
+      "a": [
+        1078,
+        98
+      ],
+      "b": [
+        1150,
+        98
+      ],
+      "t": 12,
+      "h": 2.8
+    },
+    {
+      "id": "W37-service-east",
+      "a": [
+        1150,
+        98
+      ],
+      "b": [
+        1150,
+        228
+      ],
+      "t": 12,
+      "h": 2.8
+    },
+    {
+      "id": "W38-lobby-door-jamb",
+      "a": [
+        1145,
+        279
+      ],
+      "b": [
+        1145,
+        330
+      ],
+      "t": 13,
+      "h": 2.8
+    },
+    {
+      "id": "W39-lobby-east-low",
+      "a": [
+        1085,
+        332
+      ],
+      "b": [
+        1147,
+        332
+      ],
+      "t": 13,
+      "h": 2.8
+    },
+    {
+      "id": "W40-stair-east",
+      "a": [
+        1203,
+        450
+      ],
+      "b": [
+        1203,
+        742
+      ],
+      "t": 10,
+      "h": 1.1
+    },
+    {
+      "id": "P-garden-0",
+      "a": [
+        350,
+        332
+      ],
+      "b": [
+        350,
+        146
+      ],
+      "t": 9,
+      "h": 0.65
+    },
+    {
+      "id": "P-garden-1",
+      "a": [
+        350,
+        146
+      ],
+      "b": [
+        354,
+        119
+      ],
+      "t": 9,
+      "h": 0.65
+    },
+    {
+      "id": "P-garden-2",
+      "a": [
+        354,
+        119
+      ],
+      "b": [
+        370,
+        91
+      ],
+      "t": 9,
+      "h": 0.65
+    },
+    {
+      "id": "P-garden-3",
+      "a": [
+        370,
+        91
+      ],
+      "b": [
+        394,
+        69
+      ],
+      "t": 9,
+      "h": 0.65
+    },
+    {
+      "id": "P-garden-4",
+      "a": [
+        394,
+        69
+      ],
+      "b": [
+        423,
+        57
+      ],
+      "t": 9,
+      "h": 0.65
+    },
+    {
+      "id": "P-garden-5",
+      "a": [
+        423,
+        57
+      ],
+      "b": [
+        450,
+        54
+      ],
+      "t": 9,
+      "h": 0.65
+    },
+    {
+      "id": "P-garden-6",
+      "a": [
+        450,
+        54
+      ],
+      "b": [
+        850,
+        54
+      ],
+      "t": 9,
+      "h": 0.65
+    }
+  ],
+  "openings": [
+    {
+      "id": "D01",
+      "name": "主入户门",
+      "a": [
+        928,
+        438
+      ],
+      "b": [
+        1034,
+        438
+      ],
+      "type": "door",
+      "sill": 0,
+      "head": 2.2,
+      "inferred": false,
+      "hinge": 0,
+      "swing": -1
+    },
+    {
+      "id": "D02",
+      "name": "次卧（一）门",
+      "a": [
+        270,
+        682
+      ],
+      "b": [
+        343,
+        682
+      ],
+      "type": "door",
+      "sill": 0,
+      "head": 2.15,
+      "inferred": false,
+      "hinge": 1,
+      "swing": 1
+    },
+    {
+      "id": "D03",
+      "name": "主卧套区门",
+      "a": [
+        270,
+        775
+      ],
+      "b": [
+        343,
+        775
+      ],
+      "type": "door",
+      "sill": 0,
+      "head": 2.15,
+      "inferred": false,
+      "hinge": 1,
+      "swing": -1
+    },
+    {
+      "id": "D04",
+      "name": "次卧（二）门",
+      "a": [
+        958,
+        728
+      ],
+      "b": [
+        958,
+        795
+      ],
+      "type": "door",
+      "sill": 0,
+      "head": 2.15,
+      "inferred": false,
+      "hinge": 1,
+      "swing": 1
+    },
+    {
+      "id": "D05",
+      "name": "储藏间门",
+      "a": [
+        955,
+        637
+      ],
+      "b": [
+        955,
+        702
+      ],
+      "type": "door",
+      "sill": 0,
+      "head": 2.15,
+      "inferred": true,
+      "hinge": 0,
+      "swing": -1
+    },
+    {
+      "id": "D06",
+      "name": "公卫门",
+      "a": [
+        363,
+        569
+      ],
+      "b": [
+        425,
+        569
+      ],
+      "type": "sliding",
+      "sill": 0,
+      "head": 2.15,
+      "inferred": true,
+      "hinge": 0,
+      "swing": 1
+    },
+    {
+      "id": "D07",
+      "name": "主卫门",
+      "a": [
+        141,
+        777
+      ],
+      "b": [
+        205,
+        777
+      ],
+      "type": "sliding",
+      "sill": 0,
+      "head": 2.15,
+      "inferred": true,
+      "hinge": 0,
+      "swing": 1
+    },
+    {
+      "id": "D08",
+      "name": "淋浴门",
+      "a": [
+        390,
+        479
+      ],
+      "b": [
+        442,
+        479
+      ],
+      "type": "door",
+      "sill": 0,
+      "head": 2.05,
+      "inferred": false,
+      "hinge": 0,
+      "swing": 1
+    },
+    {
+      "id": "D09",
+      "name": "健身区推拉门",
+      "a": [
+        697,
+        438
+      ],
+      "b": [
+        852,
+        438
+      ],
+      "type": "sliding",
+      "sill": 0,
+      "head": 2.5,
+      "inferred": true,
+      "hinge": 0,
+      "swing": 1
+    },
+    {
+      "id": "D10",
+      "name": "庭院推拉门",
+      "a": [
+        550,
+        176
+      ],
+      "b": [
+        550,
+        279
+      ],
+      "type": "sliding",
+      "sill": 0,
+      "head": 2.5,
+      "inferred": true,
+      "hinge": 0,
+      "swing": 1
+    },
+    {
+      "id": "D11",
+      "name": "电梯门",
+      "a": [
+        926,
+        221
+      ],
+      "b": [
+        1019,
+        221
+      ],
+      "type": "sliding",
+      "sill": 0,
+      "head": 2.2,
+      "inferred": true,
+      "hinge": 0,
+      "swing": 1
+    },
+    {
+      "id": "D12",
+      "name": "设备间门",
+      "a": [
+        1079,
+        228
+      ],
+      "b": [
+        1138,
+        228
+      ],
+      "type": "door",
+      "sill": 0,
+      "head": 2.1,
+      "inferred": false,
+      "hinge": 1,
+      "swing": -1
+    },
+    {
+      "id": "D13",
+      "name": "前室侧门",
+      "a": [
+        1148,
+        334
+      ],
+      "b": [
+        1204,
+        334
+      ],
+      "type": "door",
+      "sill": 0,
+      "head": 2.2,
+      "inferred": true,
+      "hinge": 1,
+      "swing": -1
+    },
+    {
+      "id": "G-bed1-0",
+      "name": "外窗 / 玻璃边界",
+      "a": [
+        118,
+        399
+      ],
+      "b": [
+        122,
+        381
+      ],
+      "type": "window",
+      "sill": 0.18,
+      "head": 2.65,
+      "inferred": false,
+      "hinge": 0,
+      "swing": 1
+    },
+    {
+      "id": "G-bed1-1",
+      "name": "外窗 / 玻璃边界",
+      "a": [
+        122,
+        381
+      ],
+      "b": [
+        132,
+        364
+      ],
+      "type": "window",
+      "sill": 0.18,
+      "head": 2.65,
+      "inferred": false,
+      "hinge": 0,
+      "swing": 1
+    },
+    {
+      "id": "G-bed1-2",
+      "name": "外窗 / 玻璃边界",
+      "a": [
+        132,
+        364
+      ],
+      "b": [
+        149,
+        349
+      ],
+      "type": "window",
+      "sill": 0.18,
+      "head": 2.65,
+      "inferred": false,
+      "hinge": 0,
+      "swing": 1
+    },
+    {
+      "id": "G-bed1-3",
+      "name": "外窗 / 玻璃边界",
+      "a": [
+        149,
+        349
+      ],
+      "b": [
+        170,
+        340
+      ],
+      "type": "window",
+      "sill": 0.18,
+      "head": 2.65,
+      "inferred": false,
+      "hinge": 0,
+      "swing": 1
+    },
+    {
+      "id": "G-bed1-4",
+      "name": "外窗 / 玻璃边界",
+      "a": [
+        170,
+        340
+      ],
+      "b": [
+        193,
+        337
+      ],
+      "type": "window",
+      "sill": 0.18,
+      "head": 2.65,
+      "inferred": false,
+      "hinge": 0,
+      "swing": 1
+    },
+    {
+      "id": "G-bed1-5",
+      "name": "外窗 / 玻璃边界",
+      "a": [
+        193,
+        337
+      ],
+      "b": [
+        347,
+        337
+      ],
+      "type": "window",
+      "sill": 0.18,
+      "head": 2.65,
+      "inferred": false,
+      "hinge": 0,
+      "swing": 1
+    },
+    {
+      "id": "G-master-0",
+      "name": "外窗 / 玻璃边界",
+      "a": [
+        55,
+        1143
+      ],
+      "b": [
+        64,
+        1165
+      ],
+      "type": "window",
+      "sill": 0.18,
+      "head": 2.65,
+      "inferred": false,
+      "hinge": 0,
+      "swing": 1
+    },
+    {
+      "id": "G-master-1",
+      "name": "外窗 / 玻璃边界",
+      "a": [
+        64,
+        1165
+      ],
+      "b": [
+        80,
+        1183
+      ],
+      "type": "window",
+      "sill": 0.18,
+      "head": 2.65,
+      "inferred": false,
+      "hinge": 0,
+      "swing": 1
+    },
+    {
+      "id": "G-master-2",
+      "name": "外窗 / 玻璃边界",
+      "a": [
+        80,
+        1183
+      ],
+      "b": [
+        103,
+        1196
+      ],
+      "type": "window",
+      "sill": 0.18,
+      "head": 2.65,
+      "inferred": false,
+      "hinge": 0,
+      "swing": 1
+    },
+    {
+      "id": "G-master-3",
+      "name": "外窗 / 玻璃边界",
+      "a": [
+        103,
+        1196
+      ],
+      "b": [
+        130,
+        1201
+      ],
+      "type": "window",
+      "sill": 0.18,
+      "head": 2.65,
+      "inferred": false,
+      "hinge": 0,
+      "swing": 1
+    },
+    {
+      "id": "G-master-4",
+      "name": "外窗 / 玻璃边界",
+      "a": [
+        130,
+        1201
+      ],
+      "b": [
+        346,
+        1201
+      ],
+      "type": "window",
+      "sill": 0.18,
+      "head": 2.65,
+      "inferred": false,
+      "hinge": 0,
+      "swing": 1
+    },
+    {
+      "id": "G-living",
+      "name": "外窗 / 玻璃边界",
+      "a": [
+        368,
+        1072
+      ],
+      "b": [
+        939,
+        1072
+      ],
+      "type": "window",
+      "sill": 0.18,
+      "head": 2.65,
+      "inferred": false,
+      "hinge": 0,
+      "swing": 1
+    },
+    {
+      "id": "G-bed2",
+      "name": "外窗 / 玻璃边界",
+      "a": [
+        974,
+        1072
+      ],
+      "b": [
+        1193,
+        1072
+      ],
+      "type": "window",
+      "sill": 0.18,
+      "head": 2.65,
+      "inferred": false,
+      "hinge": 0,
+      "swing": 1
+    },
+    {
+      "id": "G-gym-east",
+      "name": "外窗 / 玻璃边界",
+      "a": [
+        878,
+        231
+      ],
+      "b": [
+        878,
+        324
+      ],
+      "type": "window",
+      "sill": 0.18,
+      "head": 2.65,
+      "inferred": true,
+      "hinge": 0,
+      "swing": 1
+    },
+    {
+      "id": "G-pool",
+      "name": "外窗 / 玻璃边界",
+      "a": [
+        555,
+        175
+      ],
+      "b": [
+        864,
+        175
+      ],
+      "type": "window",
+      "sill": 0.18,
+      "head": 2.65,
+      "inferred": true,
+      "hinge": 0,
+      "swing": 1
+    },
+    {
+      "id": "G-courtyard-north",
+      "name": "外窗 / 玻璃边界",
+      "a": [
+        414,
+        109
+      ],
+      "b": [
+        549,
+        109
+      ],
+      "type": "window",
+      "sill": 0.18,
+      "head": 2.65,
+      "inferred": true,
+      "hinge": 0,
+      "swing": 1
+    },
+    {
+      "id": "G-courtyard-west",
+      "name": "外窗 / 玻璃边界",
+      "a": [
+        411,
+        112
+      ],
+      "b": [
+        411,
+        277
+      ],
+      "type": "window",
+      "sill": 0.18,
+      "head": 2.65,
+      "inferred": true,
+      "hinge": 0,
+      "swing": 1
+    },
+    {
+      "id": "G-courtyard-south",
+      "name": "外窗 / 玻璃边界",
+      "a": [
+        411,
+        281
+      ],
+      "b": [
+        549,
+        281
+      ],
+      "type": "window",
+      "sill": 0.18,
+      "head": 2.65,
+      "inferred": true,
+      "hinge": 0,
+      "swing": 1
+    },
+    {
+      "id": "G-courtyard-side",
+      "name": "外窗 / 玻璃边界",
+      "a": [
+        550,
+        110
+      ],
+      "b": [
+        550,
+        173
+      ],
+      "type": "window",
+      "sill": 0.18,
+      "head": 2.65,
+      "inferred": true,
+      "hinge": 0,
+      "swing": 1
+    },
+    {
+      "id": "G-bath",
+      "name": "外窗 / 玻璃边界",
+      "a": [
+        365,
+        391
+      ],
+      "b": [
+        457,
+        391
+      ],
+      "type": "window",
+      "sill": 0.18,
+      "head": 2.65,
+      "inferred": false,
+      "hinge": 0,
+      "swing": 1
+    },
+    {
+      "id": "G-primary-bath",
+      "name": "外窗 / 玻璃边界",
+      "a": [
+        63,
+        619
+      ],
+      "b": [
+        108,
+        619
+      ],
+      "type": "window",
+      "sill": 0.18,
+      "head": 2.65,
+      "inferred": false,
+      "hinge": 0,
+      "swing": 1
+    }
+  ],
+  "columns": [
+    [
+      [
+        103,
+        388
+      ],
+      [
+        127,
+        388
+      ],
+      [
+        127,
+        422
+      ],
+      [
+        103,
+        422
+      ]
+    ],
+    [
+      [
+        345,
+        325
+      ],
+      [
+        366,
+        325
+      ],
+      [
+        366,
+        407
+      ],
+      [
+        345,
+        407
+      ]
+    ],
+    [
+      [
+        346,
+        965
+      ],
+      [
+        373,
+        965
+      ],
+      [
+        373,
+        1146
+      ],
+      [
+        346,
+        1146
+      ]
+    ],
+    [
+      [
+        38,
+        1114
+      ],
+      [
+        64,
+        1114
+      ],
+      [
+        64,
+        1147
+      ],
+      [
+        38,
+        1147
+      ]
+    ],
+    [
+      [
+        934,
+        1033
+      ],
+      [
+        967,
+        1033
+      ],
+      [
+        967,
+        1093
+      ],
+      [
+        934,
+        1093
+      ]
+    ],
+    [
+      [
+        948,
+        581
+      ],
+      [
+        985,
+        581
+      ],
+      [
+        985,
+        625
+      ],
+      [
+        948,
+        625
+      ]
+    ],
+    [
+      [
+        1081,
+        424
+      ],
+      [
+        1101,
+        424
+      ],
+      [
+        1101,
+        454
+      ],
+      [
+        1081,
+        454
+      ]
+    ],
+    [
+      [
+        671,
+        428
+      ],
+      [
+        696,
+        428
+      ],
+      [
+        696,
+        453
+      ],
+      [
+        671,
+        453
+      ]
+    ]
+  ],
+  "furniture": [
+    {
+      "id": "master-bed-0",
+      "room": "master",
+      "kind": "bed",
+      "x": 148,
+      "z": 1028,
+      "w": 148,
+      "d": 136,
+      "h": 0.52,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "master-table-1",
+      "room": "master",
+      "kind": "table",
+      "x": 87,
+      "z": 936,
+      "w": 32,
+      "d": 35,
+      "h": 0.48,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "master-table-2",
+      "room": "master",
+      "kind": "table",
+      "x": 87,
+      "z": 1116,
+      "w": 32,
+      "d": 35,
+      "h": 0.48,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "master-chair-3",
+      "room": "master",
+      "kind": "chair",
+      "x": 294,
+      "z": 1145,
+      "w": 57,
+      "d": 48,
+      "h": 0.78,
+      "r": 25,
+      "fixed": false
+    },
+    {
+      "id": "wardrobe-cabinet-4",
+      "room": "wardrobe",
+      "kind": "cabinet",
+      "x": 88,
+      "z": 835,
+      "w": 36,
+      "d": 110,
+      "h": 2.55,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "wardrobe-cabinet-5",
+      "room": "wardrobe",
+      "kind": "cabinet",
+      "x": 165,
+      "z": 887,
+      "w": 141,
+      "d": 35,
+      "h": 2.55,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "bed1-bed-6",
+      "room": "bed1",
+      "kind": "bed",
+      "x": 206,
+      "z": 466,
+      "w": 146,
+      "d": 112,
+      "h": 0.52,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "bed1-table-7",
+      "room": "bed1",
+      "kind": "table",
+      "x": 144,
+      "z": 389,
+      "w": 29,
+      "d": 28,
+      "h": 0.48,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "bed1-table-8",
+      "room": "bed1",
+      "kind": "table",
+      "x": 144,
+      "z": 542,
+      "w": 27,
+      "d": 27,
+      "h": 0.48,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "bed1-cabinet-9",
+      "room": "bed1",
+      "kind": "cabinet",
+      "x": 198,
+      "z": 587,
+      "w": 141,
+      "d": 44,
+      "h": 2.55,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "bed2-bed-10",
+      "room": "bed2",
+      "kind": "bed",
+      "x": 1120,
+      "z": 933,
+      "w": 147,
+      "d": 130,
+      "h": 0.52,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "bed2-table-11",
+      "room": "bed2",
+      "kind": "table",
+      "x": 1174,
+      "z": 853,
+      "w": 27,
+      "d": 28,
+      "h": 0.48,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "bed2-table-12",
+      "room": "bed2",
+      "kind": "table",
+      "x": 1174,
+      "z": 1019,
+      "w": 27,
+      "d": 28,
+      "h": 0.48,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "bed2-cabinet-13",
+      "room": "bed2",
+      "kind": "cabinet",
+      "x": 1143,
+      "z": 792,
+      "w": 109,
+      "d": 38,
+      "h": 2.55,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "living-sofa-14",
+      "room": "living",
+      "kind": "sofa",
+      "x": 656,
+      "z": 901,
+      "w": 80,
+      "d": 226,
+      "h": 0.82,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "living-sofa-15",
+      "room": "living",
+      "kind": "sofa",
+      "x": 716,
+      "z": 979,
+      "w": 124,
+      "d": 58,
+      "h": 0.82,
+      "r": 90,
+      "fixed": false
+    },
+    {
+      "id": "living-table-16",
+      "room": "living",
+      "kind": "table",
+      "x": 760,
+      "z": 878,
+      "w": 52,
+      "d": 110,
+      "h": 0.34,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "living-table-17",
+      "room": "living",
+      "kind": "table",
+      "x": 806,
+      "z": 993,
+      "w": 61,
+      "d": 64,
+      "h": 0.4,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "flex-sofa-18",
+      "room": "flex",
+      "kind": "sofa",
+      "x": 589,
+      "z": 854,
+      "w": 43,
+      "d": 135,
+      "h": 0.72,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "flex-sofa-19",
+      "room": "flex",
+      "kind": "sofa",
+      "x": 589,
+      "z": 968,
+      "w": 37,
+      "d": 84,
+      "h": 0.48,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "flex-chair-20",
+      "room": "flex",
+      "kind": "chair",
+      "x": 469,
+      "z": 812,
+      "w": 61,
+      "d": 55,
+      "h": 0.75,
+      "r": -25,
+      "fixed": false
+    },
+    {
+      "id": "flex-chair-21",
+      "room": "flex",
+      "kind": "chair",
+      "x": 457,
+      "z": 1009,
+      "w": 48,
+      "d": 50,
+      "h": 0.72,
+      "r": 35,
+      "fixed": false
+    },
+    {
+      "id": "flex-table-22",
+      "room": "flex",
+      "kind": "table",
+      "x": 511,
+      "z": 918,
+      "w": 41,
+      "d": 41,
+      "h": 0.46,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "flex-cabinet-23",
+      "room": "flex",
+      "kind": "cabinet",
+      "x": 373,
+      "z": 911,
+      "w": 26,
+      "d": 286,
+      "h": 2.5,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "dining-table-24",
+      "room": "dining",
+      "kind": "table",
+      "x": 809,
+      "z": 562,
+      "w": 54,
+      "d": 137,
+      "h": 0.75,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "dining-counter-25",
+      "room": "dining",
+      "kind": "counter",
+      "x": 806,
+      "z": 661,
+      "w": 106,
+      "d": 50,
+      "h": 0.88,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "dining-chair-26",
+      "room": "dining",
+      "kind": "chair",
+      "x": 760,
+      "z": 527,
+      "w": 29,
+      "d": 30,
+      "h": 0.8,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "dining-chair-27",
+      "room": "dining",
+      "kind": "chair",
+      "x": 855,
+      "z": 527,
+      "w": 29,
+      "d": 30,
+      "h": 0.8,
+      "r": 180,
+      "fixed": false
+    },
+    {
+      "id": "dining-chair-28",
+      "room": "dining",
+      "kind": "chair",
+      "x": 760,
+      "z": 570,
+      "w": 29,
+      "d": 30,
+      "h": 0.8,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "dining-chair-29",
+      "room": "dining",
+      "kind": "chair",
+      "x": 855,
+      "z": 570,
+      "w": 29,
+      "d": 30,
+      "h": 0.8,
+      "r": 180,
+      "fixed": false
+    },
+    {
+      "id": "dining-chair-30",
+      "room": "dining",
+      "kind": "chair",
+      "x": 760,
+      "z": 610,
+      "w": 29,
+      "d": 30,
+      "h": 0.8,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "dining-chair-31",
+      "room": "dining",
+      "kind": "chair",
+      "x": 855,
+      "z": 610,
+      "w": 29,
+      "d": 30,
+      "h": 0.8,
+      "r": 180,
+      "fixed": false
+    },
+    {
+      "id": "entry-cabinet-32",
+      "room": "entry",
+      "kind": "cabinet",
+      "x": 1067,
+      "z": 516,
+      "w": 32,
+      "d": 134,
+      "h": 2.55,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "store-cabinet-33",
+      "room": "store",
+      "kind": "cabinet",
+      "x": 1017,
+      "z": 605,
+      "w": 70,
+      "d": 25,
+      "h": 2.5,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "store-cabinet-34",
+      "room": "store",
+      "kind": "cabinet",
+      "x": 1067,
+      "z": 650,
+      "w": 32,
+      "d": 113,
+      "h": 2.5,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "kitchen-counter-35",
+      "room": "kitchen",
+      "kind": "counter",
+      "x": 531,
+      "z": 560,
+      "w": 40,
+      "d": 217,
+      "h": 0.9,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "kitchen-counter-36",
+      "room": "kitchen",
+      "kind": "counter",
+      "x": 610,
+      "z": 470,
+      "w": 131,
+      "d": 36,
+      "h": 0.9,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "kitchen-counter-37",
+      "room": "kitchen",
+      "kind": "counter",
+      "x": 573,
+      "z": 646,
+      "w": 44,
+      "d": 44,
+      "h": 0.9,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "kitchen-cabinet-38",
+      "room": "kitchen",
+      "kind": "cabinet",
+      "x": 632,
+      "z": 643,
+      "w": 70,
+      "d": 50,
+      "h": 1.85,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "kitchen-basin-39",
+      "room": "kitchen",
+      "kind": "basin",
+      "x": 639,
+      "z": 471,
+      "w": 56,
+      "d": 27,
+      "h": 0.94,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "bath-shower-40",
+      "room": "bath",
+      "kind": "shower",
+      "x": 412,
+      "z": 438,
+      "w": 93,
+      "d": 71,
+      "h": 0.08,
+      "r": 0,
+      "fixed": true
+    },
+    {
+      "id": "bath-toilet-41",
+      "room": "bath",
+      "kind": "toilet",
+      "x": 465,
+      "z": 523,
+      "w": 43,
+      "d": 32,
+      "h": 0.43,
+      "r": 0,
+      "fixed": true
+    },
+    {
+      "id": "bath-counter-42",
+      "room": "bath",
+      "kind": "counter",
+      "x": 466,
+      "z": 625,
+      "w": 39,
+      "d": 98,
+      "h": 0.83,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "bath-basin-43",
+      "room": "bath",
+      "kind": "basin",
+      "x": 466,
+      "z": 622,
+      "w": 23,
+      "d": 46,
+      "h": 0.87,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "ensuite-shower-44",
+      "room": "ensuite",
+      "kind": "shower",
+      "x": 95,
+      "z": 687,
+      "w": 52,
+      "d": 96,
+      "h": 0.08,
+      "r": 0,
+      "fixed": true
+    },
+    {
+      "id": "ensuite-toilet-45",
+      "room": "ensuite",
+      "kind": "toilet",
+      "x": 174,
+      "z": 653,
+      "w": 29,
+      "d": 47,
+      "h": 0.43,
+      "r": 90,
+      "fixed": true
+    },
+    {
+      "id": "ensuite-counter-46",
+      "room": "ensuite",
+      "kind": "counter",
+      "x": 236,
+      "z": 718,
+      "w": 40,
+      "d": 99,
+      "h": 0.83,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "ensuite-basin-47",
+      "room": "ensuite",
+      "kind": "basin",
+      "x": 234,
+      "z": 729,
+      "w": 26,
+      "d": 46,
+      "h": 0.87,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "gym-treadmill-48",
+      "room": "gym",
+      "kind": "treadmill",
+      "x": 790,
+      "z": 221,
+      "w": 132,
+      "d": 55,
+      "h": 1.1,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "gym-machine-49",
+      "room": "gym",
+      "kind": "machine",
+      "x": 791,
+      "z": 338,
+      "w": 116,
+      "d": 57,
+      "h": 1.45,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "gym-counter-50",
+      "room": "gym",
+      "kind": "counter",
+      "x": 542,
+      "z": 410,
+      "w": 32,
+      "d": 30,
+      "h": 0.87,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "gym-machine-51",
+      "room": "gym",
+      "kind": "machine",
+      "x": 610,
+      "z": 405,
+      "w": 39,
+      "d": 39,
+      "h": 0.85,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "courtyard-sofa-52",
+      "room": "courtyard",
+      "kind": "sofa",
+      "x": 477,
+      "z": 159,
+      "w": 71,
+      "d": 40,
+      "h": 0.65,
+      "r": 90,
+      "fixed": false
+    },
+    {
+      "id": "courtyard-sofa-53",
+      "room": "courtyard",
+      "kind": "sofa",
+      "x": 460,
+      "z": 197,
+      "w": 36,
+      "d": 50,
+      "h": 0.65,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "courtyard-sofa-54",
+      "room": "courtyard",
+      "kind": "sofa",
+      "x": 477,
+      "z": 227,
+      "w": 71,
+      "d": 36,
+      "h": 0.65,
+      "r": 90,
+      "fixed": false
+    },
+    {
+      "id": "courtyard-table-55",
+      "room": "courtyard",
+      "kind": "table",
+      "x": 480,
+      "z": 191,
+      "w": 40,
+      "d": 40,
+      "h": 0.35,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "courtyard-planter-56",
+      "room": "courtyard",
+      "kind": "planter",
+      "x": 478,
+      "z": 85,
+      "w": 131,
+      "d": 44,
+      "h": 0.55,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "courtyard-planter-57",
+      "room": "courtyard",
+      "kind": "planter",
+      "x": 386,
+      "z": 204,
+      "w": 35,
+      "d": 147,
+      "h": 0.6,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "courtyard-planter-58",
+      "room": "courtyard",
+      "kind": "planter",
+      "x": 464,
+      "z": 301,
+      "w": 180,
+      "d": 41,
+      "h": 0.6,
+      "r": 0,
+      "fixed": false
+    },
+    {
+      "id": "courtyard-planter-59",
+      "room": "courtyard",
+      "kind": "planter",
+      "x": 530,
+      "z": 350,
+      "w": 41,
+      "d": 83,
+      "h": 0.6,
+      "r": 0,
+      "fixed": false
+    }
+  ],
+  "footprint": [
+    [
+      450,
+      54
+    ],
+    [
+      850,
+      54
+    ],
+    [
+      850,
+      42
+    ],
+    [
+      1075,
+      42
+    ],
+    [
+      1075,
+      94
+    ],
+    [
+      1154,
+      94
+    ],
+    [
+      1154,
+      328
+    ],
+    [
+      1205,
+      328
+    ],
+    [
+      1205,
+      1090
+    ],
+    [
+      963,
+      1090
+    ],
+    [
+      963,
+      1078
+    ],
+    [
+      360,
+      1078
+    ],
+    [
+      360,
+      1205
+    ],
+    [
+      130,
+      1205
+    ],
+    [
+      104,
+      1200
+    ],
+    [
+      80,
+      1188
+    ],
+    [
+      61,
+      1168
+    ],
+    [
+      49,
+      1143
+    ],
+    [
+      48,
+      1120
+    ],
+    [
+      48,
+      617
+    ],
+    [
+      111,
+      617
+    ],
+    [
+      111,
+      408
+    ],
+    [
+      117,
+      380
+    ],
+    [
+      135,
+      354
+    ],
+    [
+      162,
+      337
+    ],
+    [
+      185,
+      332
+    ],
+    [
+      350,
+      332
+    ],
+    [
+      350,
+      144
+    ],
+    [
+      355,
+      116
+    ],
+    [
+      370,
+      89
+    ],
+    [
+      394,
+      69
+    ],
+    [
+      422,
+      57
+    ]
+  ],
+  "assumptions": [
+    "原图无尺寸、比例尺和朝向：统一按 0.014 m/像素估算，图上方不等同于正北。",
+    "墙高 2.80 m、普通门高 2.15 m、窗台 0.18 m / 窗顶 2.65 m、楼板厚 0.16 m 均为暂定。",
+    "深色粗线按墙体建模，局部加厚按柱/墙垛占位；不据此判定承重性质。",
+    "健身区玻璃边界、部分推拉门、主卫与储藏间开启方式及电梯功能需要实测或建筑图复核。",
+    "顶面为室内范围的水平占位面；梁、设备管线、外立面细节及楼梯高差缺少信息，不作精确推断。",
+    "家具与窗门尺寸源于图像描摹。白模用于空间检查，不是实测模型或施工图。"
+  ]
+}

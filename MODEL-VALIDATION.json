@@ -1,0 +1,80 @@
+{
+  "meshCount": 550,
+  "wallSegments": 48,
+  "openings": 34,
+  "furniture": 60,
+  "sourceScale": 0.014,
+  "bounds": [
+    16.414999999046326,
+    4.300000000596046,
+    16.296000009655952
+  ],
+  "connectivity": [
+    {
+      "room": "客厅",
+      "reachable": true
+    },
+    {
+      "room": "多功能区",
+      "reachable": true
+    },
+    {
+      "room": "餐厅",
+      "reachable": true
+    },
+    {
+      "room": "玄关",
+      "reachable": true
+    },
+    {
+      "room": "厨房",
+      "reachable": true
+    },
+    {
+      "room": "次卧（一）",
+      "reachable": true
+    },
+    {
+      "room": "公卫",
+      "reachable": true
+    },
+    {
+      "room": "中央过道",
+      "reachable": true
+    },
+    {
+      "room": "主卧室",
+      "reachable": true
+    },
+    {
+      "room": "衣帽间",
+      "reachable": true
+    },
+    {
+      "room": "主卫",
+      "reachable": true
+    },
+    {
+      "room": "次卧（二）",
+      "reachable": true
+    },
+    {
+      "room": "储藏间",
+      "reachable": true
+    },
+    {
+      "room": "健身区",
+      "reachable": true
+    },
+    {
+      "room": "庭院",
+      "reachable": true
+    },
+    {
+      "room": "电梯前室",
+      "reachable": true
+    }
+  ],
+  "architectureUnchangedAfterDesignReplacement": true,
+  "glbBytes": 1553936
+}
