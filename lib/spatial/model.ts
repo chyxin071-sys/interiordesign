@@ -11,9 +11,9 @@ export function buildBase() {
  const doors=new T.Group();doors.name='Door_leaves';architecture.add(doors);
  const ceiling=new T.Group();ceiling.name='Ceiling_placeholder';architecture.add(ceiling);ceiling.visible=false;
  const fixed=new T.Group();fixed.name='Fixed_sanitary_and_boundaries';architecture.add(fixed);
- const white=new T.MeshStandardMaterial({color:0xfafafa,roughness:.91});
- const soft=new T.MeshStandardMaterial({color:0xffffff,roughness:1});
- const floorMat=new T.MeshStandardMaterial({color:0xf1f2f2,roughness:1,side:T.DoubleSide});
+ const white=new T.MeshStandardMaterial({color:0xd1d5d6,roughness:.86});
+ const soft=new T.MeshStandardMaterial({color:0xd9dad8,roughness:.96});
+ const floorMat=new T.MeshStandardMaterial({color:0xbcc2c3,roughness:1,side:T.DoubleSide});
  const glass=new T.MeshStandardMaterial({color:0xffffff,roughness:.16,transparent:true,opacity:.16,depthWrite:false,side:T.DoubleSide});
  const edgeMat=new T.LineBasicMaterial({color:0x9ca5aa,transparent:true,opacity:.27});
  const doorPivots:{pivot:T.Group;angle:number}[]=[];
@@ -28,7 +28,6 @@ export function buildBase() {
  const pool=rooms.find(r=>r.id==='pool')!.boundary;pool.forEach((p,i)=>segment(fixed,'Pool_retaining_wall_'+i,p,pool[(i+1)%4],8,1.2,-1.2));
  // Roof is separate; open landscape and pool remain open to the sky.
  slab(ceiling,'Main_residence_ceiling',[[185,332],[351,332],[351,392],[499,392],[499,437],[928,437],[928,350],[1089,350],[1089,752],[1205,752],[1205,1090],[963,1090],[963,1078],[360,1078],[360,1205],[130,1205],[80,1188],[49,1143],[48,617],[111,617],[111,408],[135,354]],HEIGHT,.14);
- slab(ceiling,'Gym_ceiling',[[555,175],[869,175],[869,430],[555,430]],HEIGHT,.14);
  slab(ceiling,'Common_lobby_ceiling',[[886,231],[1144,231],[1144,328],[1204,328],[1204,438],[886,438]],HEIGHT,.14);
  walls.forEach(w=>segment(wallGroup,w.id,w.a,w.b,w.t,w.h??HEIGHT));
  columns.forEach((p,i)=>{box(wallGroup,'Pier_inferred_'+i,(p[0][0]+p[2][0])/2,(p[0][1]+p[2][1])/2,p[2][0]-p[0][0],p[2][1]-p[0][1],HEIGHT);collisions.push({a:[p[0][0],(p[0][1]+p[2][1])/2],b:[p[2][0],(p[0][1]+p[2][1])/2],t:p[2][1]-p[0][1]});});

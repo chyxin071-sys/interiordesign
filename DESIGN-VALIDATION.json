@@ -1,0 +1,875 @@
+{
+  "architectureHash": "a42235f772131e418a0938d0bebc34ec0a0d601d8acbd26eb5b62dc47b58e682",
+  "openAirCorrected": true,
+  "schemes": [
+    {
+      "style": "base",
+      "meshCount": 210,
+      "triangles": 4956,
+      "assetCount": 60,
+      "geometryHash": "f53867d72e389e4fd859835836bacb86b8f16cee96a81ee11341626adeffd08c",
+      "connectivity": [
+        {
+          "id": "living",
+          "reachable": true
+        },
+        {
+          "id": "flex",
+          "reachable": true
+        },
+        {
+          "id": "dining",
+          "reachable": true
+        },
+        {
+          "id": "entry",
+          "reachable": true
+        },
+        {
+          "id": "kitchen",
+          "reachable": true
+        },
+        {
+          "id": "bed1",
+          "reachable": true
+        },
+        {
+          "id": "bath",
+          "reachable": true
+        },
+        {
+          "id": "hall",
+          "reachable": true
+        },
+        {
+          "id": "master",
+          "reachable": true
+        },
+        {
+          "id": "wardrobe",
+          "reachable": true
+        },
+        {
+          "id": "ensuite",
+          "reachable": true
+        },
+        {
+          "id": "bed2",
+          "reachable": true
+        },
+        {
+          "id": "store",
+          "reachable": true
+        },
+        {
+          "id": "gym",
+          "reachable": true
+        },
+        {
+          "id": "courtyard",
+          "reachable": true
+        },
+        {
+          "id": "lobby",
+          "reachable": true
+        }
+      ],
+      "assetCoverage": [],
+      "cameraObstacles": [
+        {
+          "id": "living-a",
+          "blocked": []
+        },
+        {
+          "id": "living-b",
+          "blocked": []
+        },
+        {
+          "id": "dining-a",
+          "blocked": []
+        },
+        {
+          "id": "kitchen-a",
+          "blocked": []
+        },
+        {
+          "id": "master-a",
+          "blocked": []
+        },
+        {
+          "id": "bed1-a",
+          "blocked": []
+        },
+        {
+          "id": "bed2-a",
+          "blocked": []
+        },
+        {
+          "id": "flex-a",
+          "blocked": []
+        },
+        {
+          "id": "entry-a",
+          "blocked": []
+        },
+        {
+          "id": "wardrobe-a",
+          "blocked": []
+        },
+        {
+          "id": "bath-a",
+          "blocked": []
+        },
+        {
+          "id": "ensuite-a",
+          "blocked": []
+        },
+        {
+          "id": "store-a",
+          "blocked": []
+        },
+        {
+          "id": "gym-a",
+          "blocked": []
+        },
+        {
+          "id": "courtyard-a",
+          "blocked": []
+        },
+        {
+          "id": "pool-a",
+          "blocked": []
+        }
+      ]
+    },
+    {
+      "style": "style01",
+      "meshCount": 18,
+      "triangles": 364432,
+      "assetCount": 116,
+      "geometryHash": "c5b865571c113f520cdf54f01c3e34845cdb01d4168e5a6016f256dedb08ed05",
+      "connectivity": [
+        {
+          "id": "living",
+          "reachable": true
+        },
+        {
+          "id": "flex",
+          "reachable": true
+        },
+        {
+          "id": "dining",
+          "reachable": true
+        },
+        {
+          "id": "entry",
+          "reachable": true
+        },
+        {
+          "id": "kitchen",
+          "reachable": true
+        },
+        {
+          "id": "bed1",
+          "reachable": true
+        },
+        {
+          "id": "bath",
+          "reachable": true
+        },
+        {
+          "id": "hall",
+          "reachable": true
+        },
+        {
+          "id": "master",
+          "reachable": true
+        },
+        {
+          "id": "wardrobe",
+          "reachable": true
+        },
+        {
+          "id": "ensuite",
+          "reachable": true
+        },
+        {
+          "id": "bed2",
+          "reachable": true
+        },
+        {
+          "id": "store",
+          "reachable": true
+        },
+        {
+          "id": "gym",
+          "reachable": true
+        },
+        {
+          "id": "courtyard",
+          "reachable": true
+        },
+        {
+          "id": "lobby",
+          "reachable": true
+        }
+      ],
+      "assetCoverage": [
+        {
+          "id": "living",
+          "count": 12
+        },
+        {
+          "id": "flex",
+          "count": 6
+        },
+        {
+          "id": "dining",
+          "count": 9
+        },
+        {
+          "id": "entry",
+          "count": 5
+        },
+        {
+          "id": "kitchen",
+          "count": 9
+        },
+        {
+          "id": "bed1",
+          "count": 11
+        },
+        {
+          "id": "bath",
+          "count": 6
+        },
+        {
+          "id": "hall",
+          "count": 2
+        },
+        {
+          "id": "master",
+          "count": 12
+        },
+        {
+          "id": "wardrobe",
+          "count": 4
+        },
+        {
+          "id": "ensuite",
+          "count": 6
+        },
+        {
+          "id": "bed2",
+          "count": 11
+        },
+        {
+          "id": "store",
+          "count": 3
+        },
+        {
+          "id": "gym",
+          "count": 5
+        },
+        {
+          "id": "courtyard",
+          "count": 13
+        },
+        {
+          "id": "pool",
+          "count": 2
+        }
+      ],
+      "cameraObstacles": [
+        {
+          "id": "living-a",
+          "blocked": []
+        },
+        {
+          "id": "living-b",
+          "blocked": []
+        },
+        {
+          "id": "dining-a",
+          "blocked": []
+        },
+        {
+          "id": "kitchen-a",
+          "blocked": []
+        },
+        {
+          "id": "master-a",
+          "blocked": []
+        },
+        {
+          "id": "bed1-a",
+          "blocked": []
+        },
+        {
+          "id": "bed2-a",
+          "blocked": []
+        },
+        {
+          "id": "flex-a",
+          "blocked": []
+        },
+        {
+          "id": "entry-a",
+          "blocked": []
+        },
+        {
+          "id": "wardrobe-a",
+          "blocked": []
+        },
+        {
+          "id": "bath-a",
+          "blocked": []
+        },
+        {
+          "id": "ensuite-a",
+          "blocked": []
+        },
+        {
+          "id": "store-a",
+          "blocked": []
+        },
+        {
+          "id": "gym-a",
+          "blocked": []
+        },
+        {
+          "id": "courtyard-a",
+          "blocked": []
+        },
+        {
+          "id": "pool-a",
+          "blocked": []
+        }
+      ]
+    },
+    {
+      "style": "style02",
+      "meshCount": 19,
+      "triangles": 341516,
+      "assetCount": 116,
+      "geometryHash": "52bf172c0e4ccd21ea87b85d15c339a923bcc262671aa5e24cd1658007bf15db",
+      "connectivity": [
+        {
+          "id": "living",
+          "reachable": true
+        },
+        {
+          "id": "flex",
+          "reachable": true
+        },
+        {
+          "id": "dining",
+          "reachable": true
+        },
+        {
+          "id": "entry",
+          "reachable": true
+        },
+        {
+          "id": "kitchen",
+          "reachable": true
+        },
+        {
+          "id": "bed1",
+          "reachable": true
+        },
+        {
+          "id": "bath",
+          "reachable": true
+        },
+        {
+          "id": "hall",
+          "reachable": true
+        },
+        {
+          "id": "master",
+          "reachable": true
+        },
+        {
+          "id": "wardrobe",
+          "reachable": true
+        },
+        {
+          "id": "ensuite",
+          "reachable": true
+        },
+        {
+          "id": "bed2",
+          "reachable": true
+        },
+        {
+          "id": "store",
+          "reachable": true
+        },
+        {
+          "id": "gym",
+          "reachable": true
+        },
+        {
+          "id": "courtyard",
+          "reachable": true
+        },
+        {
+          "id": "lobby",
+          "reachable": true
+        }
+      ],
+      "assetCoverage": [
+        {
+          "id": "living",
+          "count": 12
+        },
+        {
+          "id": "flex",
+          "count": 6
+        },
+        {
+          "id": "dining",
+          "count": 9
+        },
+        {
+          "id": "entry",
+          "count": 5
+        },
+        {
+          "id": "kitchen",
+          "count": 9
+        },
+        {
+          "id": "bed1",
+          "count": 11
+        },
+        {
+          "id": "bath",
+          "count": 6
+        },
+        {
+          "id": "hall",
+          "count": 2
+        },
+        {
+          "id": "master",
+          "count": 12
+        },
+        {
+          "id": "wardrobe",
+          "count": 4
+        },
+        {
+          "id": "ensuite",
+          "count": 6
+        },
+        {
+          "id": "bed2",
+          "count": 11
+        },
+        {
+          "id": "store",
+          "count": 3
+        },
+        {
+          "id": "gym",
+          "count": 5
+        },
+        {
+          "id": "courtyard",
+          "count": 13
+        },
+        {
+          "id": "pool",
+          "count": 2
+        }
+      ],
+      "cameraObstacles": [
+        {
+          "id": "living-a",
+          "blocked": []
+        },
+        {
+          "id": "living-b",
+          "blocked": []
+        },
+        {
+          "id": "dining-a",
+          "blocked": []
+        },
+        {
+          "id": "kitchen-a",
+          "blocked": []
+        },
+        {
+          "id": "master-a",
+          "blocked": []
+        },
+        {
+          "id": "bed1-a",
+          "blocked": []
+        },
+        {
+          "id": "bed2-a",
+          "blocked": []
+        },
+        {
+          "id": "flex-a",
+          "blocked": []
+        },
+        {
+          "id": "entry-a",
+          "blocked": []
+        },
+        {
+          "id": "wardrobe-a",
+          "blocked": []
+        },
+        {
+          "id": "bath-a",
+          "blocked": []
+        },
+        {
+          "id": "ensuite-a",
+          "blocked": []
+        },
+        {
+          "id": "store-a",
+          "blocked": []
+        },
+        {
+          "id": "gym-a",
+          "blocked": []
+        },
+        {
+          "id": "courtyard-a",
+          "blocked": []
+        },
+        {
+          "id": "pool-a",
+          "blocked": []
+        }
+      ]
+    },
+    {
+      "style": "style03",
+      "meshCount": 18,
+      "triangles": 341176,
+      "assetCount": 115,
+      "geometryHash": "8f2e2db7f36367a752563567680b68232e00efed51a99e9f10994e2b26438d44",
+      "connectivity": [
+        {
+          "id": "living",
+          "reachable": true
+        },
+        {
+          "id": "flex",
+          "reachable": true
+        },
+        {
+          "id": "dining",
+          "reachable": true
+        },
+        {
+          "id": "entry",
+          "reachable": true
+        },
+        {
+          "id": "kitchen",
+          "reachable": true
+        },
+        {
+          "id": "bed1",
+          "reachable": true
+        },
+        {
+          "id": "bath",
+          "reachable": true
+        },
+        {
+          "id": "hall",
+          "reachable": true
+        },
+        {
+          "id": "master",
+          "reachable": true
+        },
+        {
+          "id": "wardrobe",
+          "reachable": true
+        },
+        {
+          "id": "ensuite",
+          "reachable": true
+        },
+        {
+          "id": "bed2",
+          "reachable": true
+        },
+        {
+          "id": "store",
+          "reachable": true
+        },
+        {
+          "id": "gym",
+          "reachable": true
+        },
+        {
+          "id": "courtyard",
+          "reachable": true
+        },
+        {
+          "id": "lobby",
+          "reachable": true
+        }
+      ],
+      "assetCoverage": [
+        {
+          "id": "living",
+          "count": 12
+        },
+        {
+          "id": "flex",
+          "count": 6
+        },
+        {
+          "id": "dining",
+          "count": 9
+        },
+        {
+          "id": "entry",
+          "count": 5
+        },
+        {
+          "id": "kitchen",
+          "count": 9
+        },
+        {
+          "id": "bed1",
+          "count": 11
+        },
+        {
+          "id": "bath",
+          "count": 6
+        },
+        {
+          "id": "hall",
+          "count": 2
+        },
+        {
+          "id": "master",
+          "count": 12
+        },
+        {
+          "id": "wardrobe",
+          "count": 4
+        },
+        {
+          "id": "ensuite",
+          "count": 6
+        },
+        {
+          "id": "bed2",
+          "count": 11
+        },
+        {
+          "id": "store",
+          "count": 3
+        },
+        {
+          "id": "gym",
+          "count": 5
+        },
+        {
+          "id": "courtyard",
+          "count": 12
+        },
+        {
+          "id": "pool",
+          "count": 2
+        }
+      ],
+      "cameraObstacles": [
+        {
+          "id": "living-a",
+          "blocked": []
+        },
+        {
+          "id": "living-b",
+          "blocked": []
+        },
+        {
+          "id": "dining-a",
+          "blocked": []
+        },
+        {
+          "id": "kitchen-a",
+          "blocked": []
+        },
+        {
+          "id": "master-a",
+          "blocked": []
+        },
+        {
+          "id": "bed1-a",
+          "blocked": []
+        },
+        {
+          "id": "bed2-a",
+          "blocked": []
+        },
+        {
+          "id": "flex-a",
+          "blocked": []
+        },
+        {
+          "id": "entry-a",
+          "blocked": []
+        },
+        {
+          "id": "wardrobe-a",
+          "blocked": []
+        },
+        {
+          "id": "bath-a",
+          "blocked": []
+        },
+        {
+          "id": "ensuite-a",
+          "blocked": []
+        },
+        {
+          "id": "store-a",
+          "blocked": []
+        },
+        {
+          "id": "gym-a",
+          "blocked": []
+        },
+        {
+          "id": "courtyard-a",
+          "blocked": []
+        },
+        {
+          "id": "pool-a",
+          "blocked": []
+        }
+      ]
+    }
+  ],
+  "cameras": [
+    {
+      "id": "living-a",
+      "inFootprint": true,
+      "wallBlockers": [],
+      "height": 1.48,
+      "fov": 65
+    },
+    {
+      "id": "living-b",
+      "inFootprint": true,
+      "wallBlockers": [],
+      "height": 1.5,
+      "fov": 65
+    },
+    {
+      "id": "dining-a",
+      "inFootprint": true,
+      "wallBlockers": [],
+      "height": 1.47,
+      "fov": 64
+    },
+    {
+      "id": "kitchen-a",
+      "inFootprint": true,
+      "wallBlockers": [],
+      "height": 1.52,
+      "fov": 71
+    },
+    {
+      "id": "master-a",
+      "inFootprint": true,
+      "wallBlockers": [],
+      "height": 1.4,
+      "fov": 70
+    },
+    {
+      "id": "bed1-a",
+      "inFootprint": true,
+      "wallBlockers": [],
+      "height": 1.4,
+      "fov": 70
+    },
+    {
+      "id": "bed2-a",
+      "inFootprint": true,
+      "wallBlockers": [],
+      "height": 1.4,
+      "fov": 72
+    },
+    {
+      "id": "flex-a",
+      "inFootprint": true,
+      "wallBlockers": [],
+      "height": 1.45,
+      "fov": 67
+    },
+    {
+      "id": "entry-a",
+      "inFootprint": true,
+      "wallBlockers": [],
+      "height": 1.52,
+      "fov": 65
+    },
+    {
+      "id": "wardrobe-a",
+      "inFootprint": true,
+      "wallBlockers": [],
+      "height": 1.5,
+      "fov": 75
+    },
+    {
+      "id": "bath-a",
+      "inFootprint": true,
+      "wallBlockers": [],
+      "height": 1.52,
+      "fov": 74
+    },
+    {
+      "id": "ensuite-a",
+      "inFootprint": true,
+      "wallBlockers": [],
+      "height": 1.48,
+      "fov": 76
+    },
+    {
+      "id": "store-a",
+      "inFootprint": true,
+      "wallBlockers": [],
+      "height": 1.48,
+      "fov": 66
+    },
+    {
+      "id": "gym-a",
+      "inFootprint": true,
+      "wallBlockers": [],
+      "height": 1.55,
+      "fov": 67
+    },
+    {
+      "id": "courtyard-a",
+      "inFootprint": true,
+      "wallBlockers": [],
+      "height": 1.45,
+      "fov": 69
+    },
+    {
+      "id": "pool-a",
+      "inFootprint": true,
+      "wallBlockers": [],
+      "height": 1.4,
+      "fov": 63
+    }
+  ]
+}

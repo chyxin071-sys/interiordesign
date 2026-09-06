@@ -22,8 +22,8 @@ export const rooms:Room[] = [
  {id:'ensuite',name:'主卫',en:'En-suite',center:[175,702],boundary:rect(66,632,194,139),note:'左侧淋浴、中央坐便器、右侧洗手台；南侧出入口通衣帽间。',connects:['wardrobe']},
  {id:'bed2',name:'次卧（二）',en:'Bedroom 02',center:[1081,934],boundary:rect(970,771,223,291),note:'北侧收纳、右侧床头和南侧窗带；西北侧门洞通公共区。',connects:['living']},
  {id:'store',name:'储藏间',en:'Storage',center:[1013,659],boundary:rect(958,608,126,94),note:'北、东侧固定边界及可替换储物柜；西侧有门洞。',connects:['entry']},
- {id:'gym',name:'健身区',en:'Gym',center:[707,285],boundary:rect(554,177,310,248),note:'跑步机及训练器械占位；南侧为推定推拉门，西接庭院。北侧与泳池之间边界形式待核。',connects:['dining','courtyard']},
- {id:'courtyard',name:'庭院',en:'Courtyard',center:[479,234],boundary:rect(415,111,132,170),note:'围合座椅与中部矮桌；周边为花池。与健身区之间开启形式推定。',connects:['gym'],kind:'outdoor'},
+ {id:'gym',name:'健身区',en:'Fitness terrace',center:[707,285],boundary:rect(554,177,310,248),note:'泳池旁开放式健身活动平台，器械为跑步机和力量训练器。北侧通泳池，西接庭院，不设置玻璃房或顶面；南侧保留住宅出入口。是否有独立遮雨构造待实测。',connects:['dining','courtyard','pool'],kind:'outdoor'},
+ {id:'courtyard',name:'庭院',en:'Open courtyard',center:[479,234],boundary:rect(415,111,132,170),note:'开放式室外庭院。保留座椅、花池及低矮外缘，不设置周圈玻璃或顶面，东侧连接健身平台与泳池边。',connects:['gym','pool'],kind:'outdoor'},
  {id:'pool',name:'泳池',en:'Pool',center:[702,116],boundary:rect(556,63,302,108),note:'约 4.23 × 1.51 m，按原图比例；池深 1.2 m 为占位假设，不作为施工依据。',connects:[],kind:'outdoor'},
  {id:'lobby',name:'电梯前室',en:'Lift lobby',center:[1005,306],boundary:rect(888,232,253,192),note:'上侧方形井道按电梯推定；右侧设备间用途与前室门扇待确认。',connects:['entry','stairs','lift'],kind:'common'},
  {id:'lift',name:'电梯井（推定）',en:'Lift · inferred',center:[972,145],boundary:rect(889,64,170,148),note:'依据厚墙方形井道及叉线符号推定为电梯；不构造未知井道设备。',connects:['lobby'],kind:'common'},
@@ -70,7 +70,6 @@ o('D06','公卫门',[363,569],[425,569],'sliding',true);
 o('D07','主卫门',[141,777],[205,777],'sliding',true);
 o('D08','淋浴门',[390,479],[442,479],'door',false,0,2.05,0,1);
 o('D09','健身区推拉门',[697,438],[852,438],'sliding',true,0,2.5);
-o('D10','庭院推拉门',[550,176],[550,279],'sliding',true,0,2.5);
 o('D11','电梯门',[926,221],[1019,221],'sliding',true,0,2.2);
 o('D12','设备间门',[1079,228],[1138,228],'door',false,0,2.1,1,-1);
 o('D13','前室侧门',[1148,334],[1204,334],'door',true,0,2.2,1,-1);
@@ -80,9 +79,7 @@ upper.slice(1).forEach((p,i)=>win('G-bed1-'+i,upper[i],p));
 const lower:Point[]=[[55,1143],[64,1165],[80,1183],[103,1196],[130,1201],[346,1201]];
 lower.slice(1).forEach((p,i)=>win('G-master-'+i,lower[i],p));
 win('G-living',[368,1072],[939,1072]);win('G-bed2',[974,1072],[1193,1072]);
-win('G-gym-east',[878,231],[878,324],true);win('G-pool',[555,175],[864,175],true);
-win('G-courtyard-north',[414,109],[549,109],true);win('G-courtyard-west',[411,112],[411,277],true);
-win('G-courtyard-south',[411,281],[549,281],true);win('G-courtyard-side',[550,110],[550,173],true);
+win('G-gym-east',[878,231],[878,324],true);
 win('G-bath',[365,391],[457,391]);win('G-primary-bath',[63,619],[108,619]);
 export const columns = [rect(103,388,24,34),rect(345,325,21,82),rect(346,965,27,181),rect(38,1114,26,33),rect(934,1033,33,60),rect(948,581,37,44),rect(1081,424,20,30),rect(671,428,25,25)];
 export type Item={id:string;room:string;kind:'bed'|'sofa'|'cabinet'|'table'|'chair'|'counter'|'basin'|'toilet'|'shower'|'rug'|'treadmill'|'machine'|'planter';x:number;z:number;w:number;d:number;h:number;r?:number;fixed?:boolean};
@@ -108,7 +105,7 @@ export const assumptions=[
  '原图无尺寸、比例尺和朝向：统一按 0.014 m/像素估算，图上方不等同于正北。',
  '墙高 2.80 m、普通门高 2.15 m、窗台 0.18 m / 窗顶 2.65 m、楼板厚 0.16 m 均为暂定。',
  '深色粗线按墙体建模，局部加厚按柱/墙垛占位；不据此判定承重性质。',
- '健身区玻璃边界、部分推拉门、主卫与储藏间开启方式及电梯功能需要实测或建筑图复核。',
+ '泳池、庭院及池畔健身平台按露天空间处理，删除第一阶段误加的玻璃围合和健身区顶面。仅保留住宅南界出入口及东侧与前室之间的玻璃边界；是否设局部遮雨构造待实测。',
  '顶面为室内范围的水平占位面；梁、设备管线、外立面细节及楼梯高差缺少信息，不作精确推断。',
  '家具与窗门尺寸源于图像描摹。白模用于空间检查，不是实测模型或施工图。',
 ];

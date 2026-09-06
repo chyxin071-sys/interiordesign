@@ -1,7 +1,7 @@
 {
-  "meshCount": 550,
+  "meshCount": 502,
   "wallSegments": 48,
-  "openings": 34,
+  "openings": 28,
   "furniture": 60,
   "sourceScale": 0.014,
   "bounds": [
@@ -76,5 +76,5 @@
     }
   ],
   "architectureUnchangedAfterDesignReplacement": true,
-  "glbBytes": 1553936
+  "glbBytes": 1434916
 }
