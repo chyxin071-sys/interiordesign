@@ -9,15 +9,15 @@ import {Dialog,DialogContent,DialogTitle} from '@/components/ui/dialog';
 import {rooms,walls,openings,columns,furniture,footprint,routes,assumptions,SCALE,SOURCE,type Point} from '@/lib/spatial/plan';
 import {StylePicker,ComparisonBar,LightingPanel,DesignNotes} from '@/components/design-controls';
 import {STYLES,CAMERAS,LIGHT_PRESETS,layout,type StyleID,type DisplayMode} from '@/lib/spatial/design-data';
-import type {ViewerAPI,ViewMode,ViewerOptions} from '@/lib/spatial/viewer';
+import {createViewer,type ViewerAPI, type ViewMode, type ViewerOptions} from '@/lib/spatial/viewer';
 const MODES:{id:ViewMode;title:string;label:string;icon:typeof Box}[]=[{id:'perspective',title:'3D Perspective',label:'透视',icon:Box},{id:'axon',title:'Axonometric',label:'轴测',icon:Layers3},{id:'top',title:'Top / Plan View',label:'俯视',icon:Scan},{id:'plan',title:'2D Floor Plan',label:'平面',icon:FileImage},{id:'walk',title:'First-person Walkthrough',label:'漫游',icon:Footprints}];
 const INITIAL:ViewerOptions={furniture:true,ceiling:false,labels:true,routes:false,doors:true,cut:2.8};
 export default function Home(){
- const host=useRef<HTMLDivElement>(null),api=useRef<ViewerAPI|null>(null);
+ const host=useRef<HTMLDivElement>(null),api=useRef<ViewerAPI|null>(null),layoutInput=useRef<HTMLInputElement>(null);
  const [mode,setMode]=useState<ViewMode>('perspective'),[opts,setOpts]=useState(INITIAL),[ready,setReady]=useState(false),[error,setError]=useState(''),[selected,setSelected]=useState(''),[analysis,setAnalysis]=useState(false),[sidebar,setSidebar]=useState(true),[message,setMessage]=useState(''),[source,setSource]=useState(false),[overlay,setOverlay]=useState(0),[exporting,setExporting]=useState(false);
  const [style,setStyle]=useState<StyleID>('base'),[display,setDisplay]=useState<DisplayMode>('arctic'),[preset,setPreset]=useState(''),[lighting,setLighting]=useState({...LIGHT_PRESETS.ARCTIC}),[designNotes,setDesignNotes]=useState(false);
  const current=rooms.find(r=>r.id===selected),onSelect=useCallback((id:string)=>setSelected(id),[]);
- useEffect(()=>{let dead=false;import('@/lib/spatial/viewer').then(({createViewer})=>{if(dead||!host.current)return;api.current=createViewer(host.current,id=>{setSelected(id);const c=CAMERAS.find(c=>c.space===id);if(c){setMode('perspective');setOpts(p=>({...p,ceiling:true,cut:2.8}));setPreset(c.id);api.current?.setPreset(c.id)}else api.current?.focusRoom(id)});setReady(true)}).catch(e=>setError('3D 初始化未完成：'+e.message+'。可切换到 2D 平面检查。'));return()=>{dead=true;api.current?.dispose();api.current=null}},[onSelect]);
+ useEffect(()=>{let dead=false;if(!host.current)return;try{api.current=createViewer(host.current,id=>{setSelected(id);const c=CAMERAS.find(c=>c.space===id);if(c){setMode('perspective');setOpts(p=>({...p,ceiling:true,cut:2.8}));setPreset(c.id);api.current?.setPreset(c.id)}else api.current?.focusRoom(id)});setReady(true)}catch(e){setError('3D 初始化未完成：'+(e instanceof Error?e.message:String(e))+'。可切换到 2D 平面检查。')}return()=>{dead=true;api.current?.dispose();api.current=null}},[onSelect]);
  useEffect(()=>{api.current?.setMode(mode)},[mode,ready]);useEffect(()=>{api.current?.setOptions(opts)},[opts,ready]);
  useEffect(()=>{api.current?.setStyle(style)},[style,ready]);
  useEffect(()=>{api.current?.setDisplay(display)},[display,ready]);
@@ -40,6 +40,8 @@ export default function Home(){
  const changeStyle=(id:StyleID)=>{setStyle(id);if(id==='base')setDisplay('arctic');else if(style==='base')setDisplay('material');};
  const saveImage=()=>{if(!api.current?.savePNG())setMessage('模型尚未准备好，请稍候。')};
  const change=<K extends keyof ViewerOptions>(k:K,v:ViewerOptions[K])=>setOpts(p=>({...p,[k]:v}));
+ const backupLayout=()=>{api.current?.exportLayout();setMessage('已下载布局备份，发给我可用于打包你的调整。')};
+ const importBackup=async(file?:File)=>{if(!file||!api.current)return;try{if(file.size>2_000_000)throw new Error('布局文件过大');const ok=api.current.importLayout(await file.text());setMessage(ok?'布局已导入并保存至本机':'布局已导入，本机保存不可用，请保留备份');}catch(e){setMessage(e instanceof Error?e.message:'布局导入失败')}};
  const exportModel=async()=>{if(!api.current)return;setExporting(true);try{await api.current.exportGLB();setMessage('已导出完整高度模型，保留建筑层与设计层。')}catch{setMessage('导出未完成，请重试。')}finally{setExporting(false)}};
  return <main className="workspace">
  <header className="app-header"><div className="brand"><span className="brand-mark"><Box size={23}/></span><div><h1>BASE<span> / </span>空间设计实验室</h1><p>INTERACTIVE SPATIAL DESIGN</p></div></div><div className="project-status"><span className="status-dot"/>共享建筑 · 三套设计<span className="divider"/>比例待实测</div><div className="header-actions"><Button variant="ghost" onClick={()=>setAnalysis(true)}><Info size={16}/>识图说明</Button><Button variant="outline" onClick={exportModel} disabled={!ready||exporting}><Download size={16}/>{exporting?'正在导出':'导出模型'}</Button></div></header>
@@ -48,6 +50,7 @@ export default function Home(){
  <div className="layer-panel"><div className="section-label">MODEL LAYERS <span>模型分层</span></div><div className="fixed-layer"><LockKeyhole size={15}/><div>建筑结构层<small>墙体 · 楼板 · 门窗 · 固定边界</small></div><span>固定</span></div><label className="switch-row"><span>室内设计层<small>Interior Design Layer</small></span><Switch checked={opts.furniture} onCheckedChange={v=>change('furniture',v)} aria-label="显示家具占位层"/></label></div>
  <StylePicker style={style} onChange={changeStyle} onInfo={()=>setDesignNotes(true)}/></aside>
  <section className="viewer-shell" aria-label="交互式空间 Viewer"><nav className="view-toolbar" aria-label="视图模式">{!sidebar&&<button title="展开空间目录" onClick={()=>setSidebar(true)}><PanelLeftOpen size={18}/></button>}<div className="view-tabs">{MODES.map(({id,title,label,icon:Icon})=><button key={id} title={title} className={mode===id?'active':''} onClick={()=>{setMode(id);setPreset('');setOpts(p=>({...p,ceiling:id==='walk'}));api.current?.setMode(id);api.current?.reset()}} aria-pressed={mode===id}><Icon size={16}/><span>{label}</span></button>)}</div><div className="white-pill"><span/>{STYLES.find(s=>s.id===style)?.label}</div></nav>
+ <div className="layout-toolbar"><span>家具调整自动保存在本机 · 跨设备请下载备份</span><button disabled={!ready} onClick={()=>setMessage(api.current?.saveLayout()?'布局已保存至本机':'本机保存不可用，请下载布局备份')}>保存布局</button><button disabled={!ready} onClick={backupLayout}>下载布局备份</button><button disabled={!ready} onClick={()=>layoutInput.current?.click()}>导入布局</button><input hidden ref={layoutInput} type="file" accept=".json" onChange={e=>{void importBackup(e.target.files?.[0]);e.target.value=''}}/></div>
  <ComparisonBar style={style} preset={preset} display={display} onDisplay={setDisplay} onPreset={selectPreset} onSave={saveImage}/>
  <div className="viewport"><div ref={host} className="canvas-host" style={{visibility:mode==='plan'?'hidden':'visible'}}/>{!ready&&mode!=='plan'&&<div className="load-state">{error||'正在构建基础空间…'}</div>}
  {mode==='plan'&&<FloorPlan selected={selected} select={choose} source={source} overlay={overlay} furnitureVisible={opts.furniture} showRoutes={opts.routes} labels={opts.labels} style={style}/>}
